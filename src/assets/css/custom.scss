@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+#root{
+  height: 100%;
+}
+ul li {
+  list-style: none;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: #B5BDC6;
+}
+
+textarea::-moz-input-placeholde,
+input::-moz-input-placeholder {
+  color: #B5BDC6;
+}
+
+textarea::-o-input-placeholder,
+input::-o-input-placeholder {
+  color: #B5BDC6;
+}
+.LoadingCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -999;
+  font-size: 28px;
+}
+%font-14px {
+    font-family: PingFangSC;
+    font-weight: 300;
+    font-size: 14px;
+}
+%iconBackground {
+    background: url('/images/icongraphy.png') no-repeat;
+    background-size: 1280px 900px;
+}
+%verticalCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%textHide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin input-style($width,$height,$color) {
+     width: $width;
+    height: $height;
+    line-height: $height;
+    color: $color;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 14px;
+    text-indent: 12px;
+    background: #fff;
+    @extend %font-485767-14px;
+}
+
+@mixin multiTextHide($num) {
+    display: -webkit-box;
+    display: -moz-box;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    /* autoprefixer: on */
+    -webkit-line-clamp: $num;
+    -moz-line-clamp: $num;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

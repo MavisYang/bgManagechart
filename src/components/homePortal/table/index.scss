@@ -1,0 +1,31 @@
+@import "../../../assets/css/custom.scss";
+:global {
+    .task-table {
+         background: #FFFFFF;
+         .ant-table-thead>tr>th, .ant-table-tbody>tr>td{
+             text-align: left !important;
+         }
+        .ant-table-thead>tr>th {
+           font-family: PingFangSC-Medium;
+            font-size: 15px;
+            color: #393D3B;
+            &:last-child {
+                text-align: center;
+            }
+        }
+        .ant-table-tbody>tr:hover>td {
+            background: #F7F7F7;
+        }
+        .ant-table-tbody>tr>td{
+           font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #3C403E;
+            cursor: pointer;
+        }
+        .name {
+            display: block;
+            max-width: 420px;
+            @extend %textHide;
+        }
+    }
+}
