@@ -50,7 +50,7 @@ input::-o-input-placeholder {
   display: flex;
   justify-content: space-between;
   color: #344658;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 :global .homeContent .title .left {
@@ -68,5 +68,5 @@ input::-o-input-placeholder {
 }
 
 :global .tableContent {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }

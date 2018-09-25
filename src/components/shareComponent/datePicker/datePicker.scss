@@ -2,7 +2,7 @@
 $blue:#58A7F8;
 $lite-blue:#D8E7F9;
 :global {
-    .datePicker {
+    .downSelect {
       left: 0;
       top: 0;
         .ant-calendar-date {
@@ -45,7 +45,7 @@ $lite-blue:#D8E7F9;
         }
     }
 
-    .datePickerSelect {
+    .datepickerSelect {
         .ant-calendar-range-picker-input {
             text-align: left;
         }
@@ -54,12 +54,17 @@ $lite-blue:#D8E7F9;
             font-size: 16px;
             font-weight: 600;
         }
-        .ant-input {
+        input.ant-input { 
             border: 1px solid transparent;
             border-radius: 2px;
             height: 30px;
-            width: 320px;
+            // width: 320px;
             vertical-align: middle;
+            font-family: PingFangSC;
+            font-weight: 300;
+            font-size: 14px;
+            color: #485767;
+            background-color: #fff;
         }
         .ant-input:hover,
         &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
@@ -80,11 +85,6 @@ $lite-blue:#D8E7F9;
             @extend %iconBackground;
             background-position: -34px -92px;
             margin: -3px 0 0 -3px;
-        }
-        .ant-input input {
-            @extend %font-14px;
-            color: #485767;
-            background-color: #fff;
         }
     }
     .ant-calendar-header .ant-calendar-next-decade-btn,
