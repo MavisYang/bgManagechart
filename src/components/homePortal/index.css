@@ -39,6 +39,9 @@ input::-o-input-placeholder {
   top: 50%;
   transform: translate(-50%, -50%); }
 
+#suit-left {
+  right: 200px !important; }
+
 :global .homeContent {
   min-height: 100%;
   padding: 20px 50px;

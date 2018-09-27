@@ -33,10 +33,6 @@ input::-o-input-placeholder {
   z-index: -999;
   font-size: 28px; }
 
-:global .datepickerSelect .ant-calendar-picker-icon:after, :global .datepickerSelect .anticon-cross-circle:before {
-  background: url("/images/icongraphy.png") no-repeat;
-  background-size: 1280px 900px; }
-
 :global .downSelect {
   left: 0;
   top: 0; }
@@ -86,18 +82,6 @@ input::-o-input-placeholder {
   background-color: #fff; }
 :global .datepickerSelect .ant-input:hover, :global .datepickerSelect.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
   border: 1px solid #BFC0BF; }
-:global .datepickerSelect .ant-calendar-picker-icon:after {
-  width: 20px;
-  height: 20px;
-  content: '';
-  background-position: -34px -71px;
-  margin: -3px 0 0 -3px; }
-:global .datepickerSelect .anticon-cross-circle:before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  background-position: -34px -92px;
-  margin: -3px 0 0 -3px; }
 :global .ant-calendar-header .ant-calendar-next-decade-btn,
 :global .ant-calendar-header .ant-calendar-prev-month-btn,
 :global .ant-calendar-header .ant-calendar-next-month-btn,

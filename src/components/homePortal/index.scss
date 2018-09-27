@@ -1,5 +1,7 @@
 @import '../../assets/css/custom.scss';
-
+#suit-left{
+  right: 200px !important;
+}
 :global {
   .homeContent {
     min-height: 100%;

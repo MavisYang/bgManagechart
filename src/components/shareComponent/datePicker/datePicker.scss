@@ -70,22 +70,22 @@ $lite-blue:#D8E7F9;
         &.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
             border: 1px solid #BFC0BF;
         }
-        .ant-calendar-picker-icon:after {
-            width: 20px;
-            height: 20px;
-            content: '';
-            @extend %iconBackground;
-            background-position: -34px -71px;
-            margin: -3px 0 0 -3px;
-        }
-        .anticon-cross-circle:before {
-            content: '';
-            width: 20px;
-            height: 20px;
-            @extend %iconBackground;
-            background-position: -34px -92px;
-            margin: -3px 0 0 -3px;
-        }
+        //.ant-calendar-picker-icon:after {
+        //    width: 20px;
+        //    height: 20px;
+        //    content: '';
+        //  background: url('/images/icongraphy.png') no-repeat -34px -71px;
+        //  background-size: 1280px 900px;
+        //    margin: -3px 0 0 -3px;
+        //}
+        //.anticon-cross-circle:before {
+        //    content: '';
+        //    width: 20px;
+        //    height: 20px;
+        //  background: url('/images/icongraphy.png') no-repeat -34px -92px;
+        //  background-size: 1280px 900px;
+        //    margin: -3px 0 0 -3px;
+        //}
     }
     .ant-calendar-header .ant-calendar-next-decade-btn,
     .ant-calendar-header .ant-calendar-prev-month-btn,
