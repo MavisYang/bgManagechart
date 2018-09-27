@@ -17,38 +17,38 @@ export default class TableList extends Component{
         const {data} = this.props
         const columns = [{
             title: '投放任务',
-            dataIndex: 'name',
-            key: 'name',
+            dataIndex: 'launchName',
+            key: 'launchName',
             render: (text, record) => (
-                <span className="name">{record.name}</span>
+                <span className="name">{record.launchName}</span>
             )
         }, {
             title: '分配群',
-            dataIndex: 'distGroup',
-            key: 'distGroup',
+            dataIndex: 'groupNum',
+            key: 'groupNum',
             render: (text, record) => (
-                <span>{record.distGroup}</span>
+                <span>{record.groupNum}</span>
             )
         },{
             title: '预占群',
-            dataIndex: 'preGroup',
-            key: 'preGroup',
+            dataIndex: 'proGroupNum',
+            key: 'proGroupNum',
             render: (text, record) => (
-                <span>{record.preGroup}</span>
+                <span>{record.proGroupNum}</span>
             )
         }, {
             title: '已投放',
-            dataIndex: 'serving',
-            key: 'serving',
+            dataIndex: 'successNum',
+            key: 'successNum',
             render: (text, record) => (
-                <span>{record.serving}</span>
+                <span>{record.successNum}</span>
             )
         }, {
             title: '投放日期',
-            dataIndex: 'time',
-            key: 'time',
+            dataIndex: 'releaseDate',
+            key: 'releaseDate',
             render: (text, record) => (
-                <span>{record.time}</span>
+                <span>{record.releaseDate.replace('T',' ')}</span>
             )
         }]
         return (

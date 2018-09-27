@@ -1,89 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: transparent; }
+/*
+Sass::SyntaxError: ".link" failed to @extend "%font-16px".
+The selector "%font-16px" was not found.
+Use "@extend %font-16px !optional" if the extend should be able to fail.
 
-ul li {
-  list-style: none; }
 
-textarea::-webkit-input-placeholder,
-input::-webkit-input-placeholder {
-  color: #B5BDC6; }
-
-textarea::-moz-input-placeholde,
-input::-moz-input-placeholder {
-  color: #B5BDC6; }
-
-textarea::-o-input-placeholder,
-input::-o-input-placeholder {
-  color: #B5BDC6; }
-
-.LoadingCenter {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -999;
-  font-size: 28px; }
-
-.link {
-  font-family: PingFangSC;
-  font-weight: 300;
-  font-size: 16px; }
-
-.link {
-  color: #393D3B;
-  width: 280px;
-  height: 138px;
-  padding: 14px;
-  background: #FFFFFF; }
-  .link a {
-    display: block;
-    color: #393D3B !important;
-    text-decoration: none; }
-  .link .top {
-    width: 100%;
-    height: 44px;
-    margin-bottom: 6px;
-    display: -webkit-box;
-    display: -moz-box;
-    /* autoprefixer: off */
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    /* autoprefixer: on */
-    -webkit-line-clamp: 2;
-    -moz-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 400; }
-  .link .bottom {
-    height: 60px; }
-    .link .bottom .left {
-      font-size: 12px;
-      line-height: 17px;
-      height: 51px;
-      color: #707371;
-      width: 178px;
-      float: left;
-      display: -webkit-box;
-      display: -moz-box;
-      /* autoprefixer: off */
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      /* autoprefixer: on */
-      -webkit-line-clamp: 3;
-      -moz-line-clamp: 3;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-    .link .bottom .right {
-      float: right;
-      width: 60px;
-      height: 60px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover; }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+/Users/mavis/react-project/ui-bgManage/bgManagechart/src/components/shareComponent/preview/Link/index.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `each_value'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".link\" failed to @extend \"%font-16px\".\A The selector \"%font-16px\" was not found.\A Use \"@extend %font-16px !optional\" if the extend should be able to fail.\A "; }

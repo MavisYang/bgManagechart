@@ -3,13 +3,13 @@
 :global {
   .homeContent {
     min-height: 100%;
-    padding: 0 50px;
+    padding: 20px 50px;
+    //padding-top: 0;
     background-color: #F0F1F3;
     .title {
       display: flex;
       justify-content: space-between;
       color: #344658;
-       padding: 20px 0;
       .left {
         font-family: PingFangSC-Regular;
         font-size: 26px;
@@ -22,8 +22,14 @@
   }
   .echarts-line {
     margin: 20px 0;
+    background: #fff;
+    position: relative;
+    .loading{
+      @extend %verticalCenter;
+    }
   }
   .tableContent {
-   padding-bottom: 20px;
+    margin-top: 20px;
+    background: #fff;
   }
 }

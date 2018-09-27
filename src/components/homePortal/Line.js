@@ -12,10 +12,13 @@ export default class Line extends Component{
         }
     }
     componentDidMount(){
-        this.drawCharts()
+        let {foldData} =this.props
+        let XData = foldData.xAxis
+        let YData = foldData.yAxis
+        this.drawCharts(XData,YData)
     }
 
-    drawCharts = () => {
+    drawCharts = (XData,YData) => {
         let myChart = echarts.init(document.getElementById('msgDist'));
         var option = {
             backgroundColor: '#fff',
@@ -50,7 +53,7 @@ export default class Line extends Component{
             xAxis: {
                 type: 'category',
                 boundaryGap: true,
-                data: lineXData,
+                data: XData,
                 offset: 8,//X 轴相对于默认位置的偏移
                 /*网格*//*修改X轴线条样式*/
                 splitLine: { show: false, lineStyle: { type: 'dashed', borderColor: '#707371' } },
@@ -76,28 +79,28 @@ export default class Line extends Component{
                     name:'总群数',
                     type:'line',
                     stack: '总量',
-                    data:[320, 332, 301, 334, 390, 330, 320],
+                    data:YData.totalGroupNum,
                     color: '#58A7F8',
                 },
                 {
                     name:'分配数',
                     type:'line',
                     stack: '总量',
-                    data:[150, 232, 201, 154, 190, 330, 410],
+                    data:YData.group_num,
                     color:'#F8B779'
                 },
                 {
                     name:'预占数',
                     type:'line',
                     stack: '总量',
-                    data:[220, 182, 191, 234, 290, 330, 310],
+                    data:YData.pro_num,
                     color:'#B5BDC6'
                 },
                 {
                     name:'已投放',
                     type:'line',
                     stack: '总量',
-                    data:[120, 132, 101, 134, 90, 230, 210],
+                    data:YData.success_num,
                     color:'#6AD298'
                 }
             ]
@@ -113,11 +116,6 @@ export default class Line extends Component{
     }
 
     render(){
-        return (
-            <div className='echarts-line'>
-                <div id="msgDist" style={{ height: "400px" }} />
-            </div>
-
-        )
+        return (<div id="msgDist" style={{ height: "400px" }} />)
     }
 }

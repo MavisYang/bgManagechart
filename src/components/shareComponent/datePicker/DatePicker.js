@@ -20,14 +20,12 @@ export default class DatePickeSelect extends Component {
     onOpenChange = (status) => {
         // console.log(status,2) //true or false
     }
-
-    disabledDate=(current)=>{
-        return current < moment().subtract(30,'days') || current > moment().endOf(current)
-    }
     render(){
-        const {disabledDate} =this.props;
+        const {disabledDate,dateValue} =this.props;
+        console.log(dateValue,'1212')
         return (
             <DatePicker
+                defaultValue={dateValue}
                 showTime={false}
                 showToday={false}
                 locale={locale}

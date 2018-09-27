@@ -5,31 +5,25 @@
   outline: 0;
   vertical-align: baseline;
   background: transparent;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 #root {
-  height: 100%;
-}
+  height: 100%; }
 
 ul li {
-  list-style: none;
-}
+  list-style: none; }
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-  color: #B5BDC6;
-}
+  color: #B5BDC6; }
 
 textarea::-moz-input-placeholde,
 input::-moz-input-placeholder {
-  color: #B5BDC6;
-}
+  color: #B5BDC6; }
 
 textarea::-o-input-placeholder,
 input::-o-input-placeholder {
-  color: #B5BDC6;
-}
+  color: #B5BDC6; }
 
 .LoadingCenter {
   position: absolute;
@@ -37,45 +31,32 @@ input::-o-input-placeholder {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -999;
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 :global .task-table .name {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-}
+  text-overflow: ellipsis; }
 
 :global .task-table {
-  background: #FFFFFF;
-}
+  background: #FFFFFF; }
+  :global .task-table .ant-table-thead > tr > th, :global .task-table .ant-table-tbody > tr > td {
+    text-align: left !important; }
+  :global .task-table .ant-table-thead > tr > th {
+    font-family: PingFangSC-Medium;
+    font-size: 15px;
+    color: #393D3B; }
+    :global .task-table .ant-table-thead > tr > th:last-child {
+      text-align: center; }
+  :global .task-table .ant-table-tbody > tr:hover > td {
+    background: #F7F7F7; }
+  :global .task-table .ant-table-tbody > tr > td {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3C403E;
+    cursor: pointer; }
+  :global .task-table .name {
+    display: block;
+    max-width: 420px; }
 
-:global .task-table .ant-table-thead > tr > th, :global .task-table .ant-table-tbody > tr > td {
-  text-align: left !important;
-}
-
-:global .task-table .ant-table-thead > tr > th {
-  font-family: PingFangSC-Medium;
-  font-size: 15px;
-  color: #393D3B;
-}
-
-:global .task-table .ant-table-thead > tr > th:last-child {
-  text-align: center;
-}
-
-:global .task-table .ant-table-tbody > tr:hover > td {
-  background: #F7F7F7;
-}
-
-:global .task-table .ant-table-tbody > tr > td {
-  font-family: PingFangSC-Regular;
-  font-size: 14px;
-  color: #3C403E;
-  cursor: pointer;
-}
-
-:global .task-table .name {
-  display: block;
-  max-width: 420px;
-}
+/*# sourceMappingURL=index.css.map */

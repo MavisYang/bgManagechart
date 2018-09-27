@@ -2,7 +2,9 @@
   font-weight: 300;
   font-size: 12px;
   color: #B5BDC6;
-  text-align: center; }
+  text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;}
 
 .pageFragWrapper .sizeSwitch {
   display: inline-block;
@@ -67,3 +69,5 @@
 .pageFragWrapper .nextPage:hover,
 .pageFragWrapper .lastPage:hover {
   color: #83DFA8; }
+
+/*# sourceMappingURL=pageRules.css.map */

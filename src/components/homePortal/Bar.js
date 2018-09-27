@@ -2,20 +2,16 @@ import React,{Component} from 'react';
 import './index.css'
 import moment from 'moment';
 import echarts from 'echarts'
-const lineXData = ['2018-08-26','2018-08-27','2018-08-28','2018-08-29','2018-08-30','2018-08-31','2018-09-01']
+// const lineXData = ['2018-08-26','2018-08-27','2018-08-28','2018-08-29','2018-08-30','2018-08-31','2018-09-01']
 export default class Bar extends Component{
-    constructor(props){
-        super(props);
-        this.state={
 
-        }
-    }
     componentDidMount(){
-        this.drawCharts()
+        let XData = this.props.coluData.xAxis
+        let YData = this.props.coluData.yAxis
+        this.drawCharts(XData,YData)
     }
 
-
-    drawCharts = () => {
+    drawCharts = (XData,YData) => {
         let myChart = echarts.init(document.getElementById('bar'));
         var option = {
             backgroundColor: '#fff',
@@ -54,11 +50,11 @@ export default class Bar extends Component{
             toolbox: {
                 show:false
             },
-            // dataZoom: [{ type: 'inside', xAxisIndex: [0], filterMode: 'empty' }],
+            dataZoom: [{ type: 'inside', xAxisIndex: [0], filterMode: 'empty' }],
             xAxis: {
                 type: 'category',
                 boundaryGap: true,
-                data: lineXData,
+                data: XData,
                 offset: 8,//X 轴相对于默认位置的偏移
                 /*网格*//*修改X轴线条样式*/
                 splitLine: { show: false, lineStyle: { type: 'dashed', borderColor: '#707371' } },
@@ -85,7 +81,7 @@ export default class Bar extends Component{
                     smooth: true,
                     barMaxWidth: '20px',
                     color: '#FF99A5',
-                    data: [120, 200, 150, 80, 70, 110, 130],
+                    data: YData,
                 }
             ],
 
@@ -101,10 +97,6 @@ export default class Bar extends Component{
     }
 
     render(){
-        return (
-            <div className='echarts-line'>
-                <div id="bar" style={{ height: "354px" }} />
-            </div>
-            )
+        return (<div id="bar" style={{ height: "354px" }} />)
     }
 }

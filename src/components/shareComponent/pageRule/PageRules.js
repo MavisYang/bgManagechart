@@ -14,8 +14,8 @@ export default class PageFragRule extends Component {
         }
     }
     _getPageInfo = (url) => {
-        let paramas = this.props.searchParamas;
-        AxiosCore.post(url, paramas).then(res => {
+        let releaseDay = this.props.releaseDay;
+        AxiosCore.get(url+'&releaseDay='+releaseDay).then(res => {
             this.props.pullData(res)
         }).catch(req => {
             console.log(req)

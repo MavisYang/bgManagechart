@@ -1,63 +1,30 @@
-.wxapp {
-  font-family: PingFangSC;
-  font-weight: 400;
-  font-size: 16px; }
+/*
+Sass::SyntaxError: ".wxapp" failed to @extend "%font-16px".
+The selector "%font-16px" was not found.
+Use "@extend %font-16px !optional" if the extend should be able to fail.
 
-.footer .icon {
-  background: url("/images/icongraphy.png") no-repeat;
-  background-size: 1280px 900px; }
 
-.title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.wxapp {
-  color: #393D3B;
-  width: 280px;
-  height: 316px;
-  padding: 14px 0;
-  background: #FFFFFF; }
-
-.header {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: #707371;
-  padding: 0 14px; }
-  .header span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 6px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #F3F3F3; }
-
-.title {
-  margin-top: 8px;
-  padding: 0 14px; }
-
-.linkImg {
-  width: 252px;
-  height: 184px;
-  margin: 10px auto 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.footer {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: #707371;
-  margin-top: 14px;
-  border-top: 1px solid #E9EBEE;
-  padding: 9px 14px 0; }
-  .footer .icon {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    background-position: -34px -173px; }
+Backtrace:
+/Users/mavis/react-project/ui-bgManage/bgManagechart/src/components/shareComponent/preview/WxApp/index.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `each_value'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".wxapp\" failed to @extend \"%font-16px\".\A The selector \"%font-16px\" was not found.\A Use \"@extend %font-16px !optional\" if the extend should be able to fail.\A "; }

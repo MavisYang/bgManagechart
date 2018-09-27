@@ -27,7 +27,7 @@ export default class RangePicker extends Component {
         const {dateValue,disabledDate} =this.props;
         return (
             <DatePicker.RangePicker
-                value={dateValue!=''?[moment(dateValue[0]), moment(dateValue[1])]:[]}
+                defaultValue={dateValue}
                 showTime={false}
                 locale={locale}
                 className={"dateSelect"}
