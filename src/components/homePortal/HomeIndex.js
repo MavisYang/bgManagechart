@@ -85,7 +85,8 @@ export default class HomeIndex extends Component {
     }
     getTableDate=()=>{
         const {tableLists,oneDate} =this.state
-        let url = this.state.url +'?_currentPage='+tableLists.pageInfo.currentPage +'&_pageSize='+tableLists.pageInfo.pageSize+'&releaseDay='+moment(oneDate).format('YYYY-MM-DD')
+        let releaseDay = moment(oneDate).format('YYYY-MM-DD')
+        let url = this.state.url +'?_currentPage='+tableLists.pageInfo.currentPage +'&_pageSize='+tableLists.pageInfo.pageSize+'&releaseDay='+ releaseDay
         AxiosCore.get(url).then(res=>{
             // console.log(res,'res')
             if(res.resultCode==100){
@@ -171,7 +172,7 @@ export default class HomeIndex extends Component {
                         tableLists.pageInfo&&tableLists.pageInfo.totalPage>1
                             ? <PageFragRule
                                 pageInfo={tableLists.pageInfo}
-                                releaseDay={oneDate}
+                                releaseDay={moment(oneDate).format('YYYY-MM-DD')}
                                 pullData={this.changeTableLists}
                                 url={this.state.url}
                             />:null

@@ -78,28 +78,24 @@ export default class Line extends Component{
                 {
                     name:'总群数',
                     type:'line',
-                    stack: '总量',
                     data:YData.totalGroupNum,
                     color: '#58A7F8',
                 },
                 {
                     name:'分配数',
                     type:'line',
-                    stack: '总量',
                     data:YData.group_num,
                     color:'#F8B779'
                 },
                 {
                     name:'预占数',
                     type:'line',
-                    stack: '总量',
                     data:YData.pro_num,
                     color:'#B5BDC6'
                 },
                 {
                     name:'已投放',
                     type:'line',
-                    stack: '总量',
                     data:YData.success_num,
                     color:'#6AD298'
                 }
